@@ -1,2 +1,20 @@
-# landing-campana
-Campaña, aterrizaje de ventas
+# Landing Page - Campaña Política
+
+## Descripción
+Landing page ficticia para la campaña política de Alejandro Vargas Mora,
+candidato a la Alcaldía de Medellín. Proyecto desarrollado como ejercicio
+práctico de desarrollo web.
+
+## Tecnologías
+- HTML5
+- CSS3
+- JavaScript
+
+## Estructura
+landing-campana/
+├── index.html
+├── CSS/
+│   └── style.css
+├── js/
+│   └── script.js
+└── img/
