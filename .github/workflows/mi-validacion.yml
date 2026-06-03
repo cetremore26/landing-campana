@@ -1,0 +1,37 @@
+# El nombre de tu automatización
+name: Mi Primer Workflow de Práctica
+
+# ¿Cuándo se va a ejecutar? (El disparador o "Trigger")
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+# ¿Qué va a hacer? (Los trabajos o "Jobs")
+jobs:
+  ejecutar-pasos:
+    # El tipo de sistema operativo virtual que usará GitHub en la nube
+    runs-on: ubuntu-latest
+
+    # La secuencia de tareas que se van a ejecutar
+    steps:
+      # Paso 1: Descargar el código de tu repositorio en la máquina virtual
+      - name: Descargar el código fuente
+        uses: actions/checkout@v4
+
+      # Paso 2: Verificar la existencia de index.html
+      - name: Verificar si existe index.html
+        run: test -f index.html
+
+      # Paso 3: Verificar la existencia de style.css
+      - name: Verificar si exite css/style.css
+        run: test -f css/style.css
+
+      # Paso 4: Verificar la existencia de script.js
+      - name: Verificar si exite js/script.js
+        run: test -f js/script.js
+
+      # Paso 3: Un comando de ejemplo en la terminal de Linux de GitHub
+      - name: Saludar al desarrollador
+        run: echo "¡El workflow se ha ejecutado con éxito en GitHub Actions!"
