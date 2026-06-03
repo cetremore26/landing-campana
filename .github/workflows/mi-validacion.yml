@@ -26,7 +26,7 @@ jobs:
 
       # Paso 3: Verificar la existencia de style.css
       - name: Verificar si exite css/style.css
-        run: test -f css/style.css
+        run: test -f CSS/style.css
 
       # Paso 4: Verificar la existencia de script.js
       - name: Verificar si exite js/script.js
