@@ -32,6 +32,11 @@ jobs:
       - name: Verificar si exite js/script.js
         run: test -f js/script.js
 
-      # Paso 3: Un comando de ejemplo en la terminal de Linux de GitHub
+      # Paso 5: Verificar la existencia de README.md
+      - name: Verificar si existe README.md
+        run: test -f README.md
+
+      # Paso 6: Un comando de ejemplo en la terminal de Linux de GitHub
       - name: Saludar al desarrollador
         run: echo "¡El workflow se ha ejecutado con éxito en GitHub Actions!"
+        

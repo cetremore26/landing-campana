@@ -1,3 +1,5 @@
+[![Mi Primer Workflow de Práctica](https://github.com/cetremore26/landing-campana/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/cetremore26/landing-campana/actions/workflows/ci.yml)
+
 # Landing Page - Campaña Política
 
 ## Descripción
