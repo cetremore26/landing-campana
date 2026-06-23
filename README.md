@@ -60,6 +60,24 @@ Configuradas en *Settings → Branches → Branch protection rules*:
 - ✅ Require status checks to pass before merging (workflow `ci.yml`).
 - ✅ No permitir force-push ni eliminar la rama `main`.
 
+## Publicación oficial
+- Versión estable: **v1.0.0**
+- Tag: `v1.0.0`
+- Release automático: se generará en GitHub al empujar el tag `v1.0.0`.
+- Archivo de cambios: `CHANGELOG.md`.
+- GitHub Pages: `https://cetremore26.github.io/landing-campana`
+
+### Qué se agregó para esta entrega
+- `CHANGELOG.md` con la primera versión estable.
+- Workflow de GitHub Actions para crear release desde un tag semántico (`.github/workflows/release.yml`).
+- Workflow de GitHub Actions para desplegar GitHub Pages desde `main` (`.github/workflows/pages.yml`).
+
+### Verificación de publicación
+1. El repositorio principal se mantiene en `main` con la versión estable.
+2. El tag `v1.0.0` estará presente en GitHub.
+3. El Release se generará automáticamente desde el workflow al empujar el tag.
+4. La página estará publicada en la URL de GitHub Pages del repositorio.
+
 ### 5. Plantillas
 - Issue: [`.github/ISSUE_TEMPLATE/tarea.md`](.github/ISSUE_TEMPLATE/tarea.md) — Título, Descripción, Prioridad, Responsable, Criterios de aceptación.
 - Pull Request: [`.github/PULL_REQUEST_TEMPLATE.md`](.github/PULL_REQUEST_TEMPLATE.md) — Descripción, Cambios realizados, Evidencias, Checklist.
