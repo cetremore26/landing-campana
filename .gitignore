@@ -1,0 +1,28 @@
+# Sistema operativo
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Editores / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Dependencias (por si en el futuro se agrega tooling con npm)
+node_modules/
+
+# Build / salida generada (usada por el workflow de GitHub Pages)
+dist/
+build/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Variables de entorno y secretos locales
+.env
+.env.local
+.env.*.local
